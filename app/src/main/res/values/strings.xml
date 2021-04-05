@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QR Generate</string>
+    <string name="Head" />
+    <string name="info">The information I have given is true, correct and complete. I understand that failure to answer any question or giving false answer can penalized in accordance with law</string>
+    <string name="authorization" />
+    <string name="Autho">I hereby authorize, to collect my data indicated herein the purpose of effecting control of the COVID-19 infection. I understand that my personal information is protected by RA 10173, Data Privacy Act of 2012.</string>
+</resources>
