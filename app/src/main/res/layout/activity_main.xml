@@ -20,17 +20,17 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
+            android:background="@drawable/custom_input"
             android:drawableLeft="@drawable/ic_baseline_person_24"
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Full Name"
             android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/warnName"
-            android:background="@drawable/custom_input"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/warnName" />
 
         <EditText
             android:id="@+id/EditTextAddress"
@@ -47,12 +47,12 @@
             android:ems="10"
             android:hint="Address"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/warnAddress"
             android:paddingStart="12dp"
             android:paddingLeft="12dp"
-            android:paddingRight="12dp"/>
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/warnAddress" />
 
         <EditText
             android:id="@+id/EditTextContactNumber"
@@ -69,12 +69,12 @@
             android:ems="10"
             android:hint="Contact Number"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/warnContactNumber"
             android:paddingStart="12dp"
             android:paddingLeft="12dp"
-            android:paddingRight="12dp"/>
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/warnContactNumber" />
 
         <EditText
             android:id="@+id/EditTextEmailAddress"
@@ -91,12 +91,12 @@
             android:ems="10"
             android:hint="Email Address"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/EditTextContactNumber"
             android:paddingStart="12dp"
             android:paddingLeft="12dp"
-            android:paddingRight="12dp"/>
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextContactNumber" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -218,7 +218,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="sans-serif-black"
-            android:text="CONTACT TRACING FORM"
+            android:text="TRACE TOGETHER FORM"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="24sp"
             android:textStyle="bold"

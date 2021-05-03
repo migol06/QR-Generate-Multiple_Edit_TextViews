@@ -20,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 .withSplashTimeOut(3000)
                 .withBackgroundColor(Color.WHITE)
                 .withFooterText("CJLR 2021")
-                .withLogo(R.mipmap.ct);
+                .withLogo(R.mipmap.tracetogether);
 
         config.getFooterTextView().setTextColor(Color.BLACK);
 

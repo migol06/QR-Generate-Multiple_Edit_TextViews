@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QR Generate</string>
+    <string name="app_name">Trace Together</string>
     <string name="Head" />
     <string name="info">The information I have given is true, correct and complete. I understand that failure to answer any question or giving false answer can penalized in accordance with law</string>
     <string name="authorization" />

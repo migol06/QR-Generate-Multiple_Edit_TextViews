@@ -54,26 +54,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean validate() {
-        if(fullname.getText().toString().equals("")){
-            warn_name.setVisibility(View.VISIBLE);
-            warn_name.setText("Enter a Full Name");
+        String name= fullname.getText().toString();
+        String location=address.getText().toString();
+        String contact=contactnumber.getText().toString();
+
+        if(name.equals("")){
+            showError(fullname, "Please input your Full Name");
             return false;
         }
 
-        if(address.getText().toString().equals("")){
-            warn_address.setVisibility(View.VISIBLE);
-            warn_address.setText("Enter an Address");
+        if(location.equals("") || location.length() < 5){
+            showError(address, "Please input your complete address");
             return false;
         }
 
-        if (contactnumber.getText().toString().equals("")){
-            warn_contactnumber.setVisibility(View.VISIBLE);
-            warn_contactnumber.setText("Enter a Contact Number");
+        if (contact.equals("") || contact.length() != 11){
+            showError(contactnumber, "Please input your contact number");
             return false;
         }
+
 
         return true;
 
+    }
+
+    private void showError(EditText input, String s) {
+        input.setError(s);
+        input.requestFocus();
     }
 
     private void initQRCodes() {
@@ -88,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         String email=emailadress.getText().toString();
 
         StringBuilder textToSend = new StringBuilder();
-        textToSend.append( " Name: " + name + " | Contact Number: " + contact +" | Address: " + location + " | Email: " + email);
+        textToSend.append( name + " | " + contact +" | " + location + " | " + email);
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         try {
